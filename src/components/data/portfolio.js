@@ -30,7 +30,7 @@ const ReactData = [
     title: "Porfolio Website",
     imgUrl: "/assets/Portfolio.png",
     stack: ["React", "Tail", "Vite"],
-    link: "https://github.com/hubertle43100/UIDesign/tree/main/NewsAPI",
+    link: "https://hubertle.online/",
     detail:
       "Portfolio showcasing all projects and provide an extent of my resume ",
   },
@@ -38,7 +38,7 @@ const ReactData = [
     title: "React Blogs",
     imgUrl: "/assets/Blogs.png",
     stack: ["React", "Tail", "CMS"],
-    link: "https://github.com/hubertle43100/UIDesign/tree/main/NewsAPI",
+    link: "https://minimal-blog-lime.vercel.app/",
     detail:
       "A Blog site that is all content related to front-end development. Using CMS Sanity, I am able to control the content and data to display.",
   },
@@ -46,7 +46,7 @@ const ReactData = [
     title: "Boba e-commerce",
     imgUrl: "/assets/BobaShop.png",
     stack: ["React", "Stripe", "CMS", "Tail", "Shad", "Next"],
-    link: "https://github.com/hubertle43100/UIDesign/tree/main/NewsAPI",
+    link: "https://minimal-ecommerce-omega.vercel.app/",
     detail:
       "An online boba shop connected to CMS Sanity and Stripe for checkout. Theme of the site and some UI elements come from Shadcn",
   },
