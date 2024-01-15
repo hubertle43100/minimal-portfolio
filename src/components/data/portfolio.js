@@ -27,14 +27,6 @@ const iOSData = [
 
 const ReactData = [
   {
-    title: "Porfolio Website",
-    imgUrl: "/assets/Portfolio.png",
-    stack: ["React", "Tail", "Vite"],
-    link: "https://hubertle.online/",
-    detail:
-      "Portfolio showcasing all projects and provide an extent of my resume ",
-  },
-  {
     title: "React Blogs",
     imgUrl: "/assets/Blogs.png",
     stack: ["React", "Tail", "CMS"],
@@ -50,6 +42,14 @@ const ReactData = [
     detail:
       "An online boba shop connected to CMS Sanity and Stripe for checkout. Theme of the site and some UI elements come from Shadcn",
   },
+  {
+    title: "Porfolio Website",
+    imgUrl: "/assets/Portfolio.png",
+    stack: ["React", "Tail", "Vite"],
+    link: "https://hubertle.online/",
+    detail:
+      "Portfolio showcasing all projects and provide an extent of my resume ",
+  },
 ];
 
-export { iOSData, ReactData };
+export { ReactData, iOSData };
