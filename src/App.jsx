@@ -4,6 +4,8 @@ import Timeline from "./components/Timeline";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import FooterItem from "./components/FooterItem";
+import footer from "./components/data/footer";
 import logoImage from "./public/Hubert.png";
 
 function App() {
@@ -116,6 +118,20 @@ function App() {
                 >
                   View Resume
                 </a>
+              </div>
+              <div className="container max-w-screen-lg mx-auto mt-4">
+                <div>
+                  <div className="flex flex-wrap justify-start gap-2">
+                    {footer.map((footer) => (
+                      <FooterItem
+                        href={footer.href}
+                        bgColor={footer.bgColor}
+                        viewBox={footer.viewBox}
+                        path={footer.path}
+                      />
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
