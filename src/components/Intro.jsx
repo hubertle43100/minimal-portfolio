@@ -4,7 +4,7 @@ import { iOSTechStack, ReactTechStack } from "./data/intro";
 import SectionTitle from "./SectionTitle";
 
 function Intro() {
-  const [selectedButton, setSelectedButton] = useState("iOS");
+  const [selectedButton, setSelectedButton] = useState("React");
 
   const handleButtonClick = (button) => {
     setSelectedButton(button);

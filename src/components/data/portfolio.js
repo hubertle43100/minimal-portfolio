@@ -19,7 +19,7 @@ const iOSData = [
     title: "Need Seven",
     imgUrl: "/assets/NeedSeven.png",
     stack: ["Swift", "CORE", "OPEN"],
-    link: "https://github.com/hubertle43100/UIDesign/tree/main/NewsAPI",
+    link: "https://github.com/hubertle43100/Seven",
     detail:
       "Using the latest openAI API users can create a 7 day challenge that conforms to their goals.",
   },
