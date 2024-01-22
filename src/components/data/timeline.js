@@ -1,7 +1,7 @@
 export default [
   {
     year: "Feb 2023 - Present",
-    title: "iOS Engineer",
+    title: "junior iOS Engineer",
     duration: "1 Year 3 Months",
     details:
       "I am responsible for transforming the app from UIKit to SwiftUI pushing app out to testflights. Filtering and displaying over 100 videos through AVFoundation. Managed about +700 information on completed task and emails with Firebase",
