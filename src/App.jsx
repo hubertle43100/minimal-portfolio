@@ -99,7 +99,7 @@ function App() {
                 />
               </div>
               <h1 className="text-2xl md:text-3xl mb-1 md:mb-3 font-bold font-Oswald text-onyx-300">
-                I love to use my creative vision for coding front end for moblie
+                I love to use my creative vision for coding front end for mobile
                 and web.
               </h1>
               <p className=" font-bold font-SourceCodePro">
