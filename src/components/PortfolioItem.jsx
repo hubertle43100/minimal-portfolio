@@ -1,4 +1,6 @@
 import React from "react";
+import { LuArrowUpRight } from "react-icons/lu";
+import { FaGithub } from "react-icons/fa";
 
 function PortfolioItem({ title, imgUrl, stack, link, detail }) {
   const abbreviations = [
@@ -70,9 +72,22 @@ function PortfolioItem({ title, imgUrl, stack, link, detail }) {
               </span>
             ))}
           </p>
-          <button className="bg-onyx-300 text-white font-semibold py-2 px-4 rounded-md w-full">
-            See more
-          </button>
+          <div className="flex">
+            <button className="bg-onyx-300 text-white font-semibold py-2 px-4 rounded-md flex items-center justify-between w-full m-1">
+              Live Demo
+              <LuArrowUpRight />
+            </button>
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={title}
+              className="bg-onyx-300 text-white font-semibold py-2 px-4 rounded-md flex items-center justify-between w-full m-1 hover:bg-slate-200"
+            >
+              Github
+              <FaGithub />
+            </a>
+          </div>
         </div>
       </div>
     </div>

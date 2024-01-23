@@ -65,7 +65,7 @@ function App() {
     </svg>
   );
 
-  const [selectedButton, setSelectedButton] = useState("iOS");
+  const [selectedButton, setSelectedButton] = useState("React");
 
   const handleButtonClick = (button) => {
     setSelectedButton(button);
@@ -74,19 +74,19 @@ function App() {
   return (
     <>
       <div className="bg-white dark:bg-gray-800 text-stone-900 dark:text-white min-h-screen font-inter">
-        <div className="max-w-5xl w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="md:h-screen md:sticky md:top-0 lg:sticky lg:top-0 lg:h-screen pt-10">
+        <div className="max-w-5xl w-11/12 mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8">
+          <div className="xl:sticky xl:top-0 xl:h-screen pt-10 ">
             <button
               type="button"
               onClick={handleThemeSwitch}
-              className="p-2 z-10 left-10 top-4 bg-onyx-300 dark:bg-white text-lg p-1 rounded-md dark:text-black"
+              className="p-2 z-10 left-10 top-4 bg-onyx-300 dark:bg-white text-lg rounded-md dark:text-black"
             >
               {theme === "dark" ? sun : moon}
             </button>
             {/* Left column for Intro */}
             <div className="pt-20">
-              <h3 className="pl-1 font-bold font-SourceCodePro">
-                Hi, my name is
+              <h3 className="pl-1 font-bold font-SourceCodePro md:mt-10">
+                Hi, <span className="bg-yellow-200">my name</span> is
               </h3>
               <div className="flex items-center">
                 <h1 className="text-5xl md:text-6xl mb-1 md:mb-3 font-bold font-Oswald pr-5">
@@ -103,7 +103,8 @@ function App() {
                 and web.
               </h1>
               <p className=" font-bold font-SourceCodePro">
-                I'm a front-end developer with two years of specialized
+                I'm a front-end developer with{" "}
+                <span className="bg-yellow-200">two years</span> of specialized
                 experience in iOS. To broaden my career opportunities, I've
                 transitioned into React and have plans to extend into React
                 Native in the near future.
@@ -112,8 +113,8 @@ function App() {
                 <a
                   href="https://docs.google.com/document/d/11a477w9AtugxLExYpAYGRLVQL_YFCYu8MKw7g4nAkFE/edit?usp=sharing"
                   download="HubertLe_Resume.pdf"
-                  target="_blank" // Open the link in a new window
-                  rel="noopener noreferrer" // Recommended for security when using target="_blank"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-slate-300 text-white px-4 py-2 rounded-md inline-block mt-2 transition duration-300 hover:shadow-md hover:bg-sage-300"
                 >
                   View Resume

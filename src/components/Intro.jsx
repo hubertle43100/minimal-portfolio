@@ -28,24 +28,24 @@ function Intro() {
       <div className="mb-3">
         <p className=" font-bold font-SourceCodePro text-left">I'm a</p>
         <button
-          onClick={() => handleButtonClick("iOS")}
-          className={`font-semibold font-Oswald rounded-sm ${
-            selectedButton === "iOS" ? "text-onyx-300" : "text-gray-300"
-          } ${selectedButton === "iOS" ? "iOS" : ""}
-          sm:text-xs md:text-sm lg:text-base xl:text-base transition-transform duration-100 transform hover:-translate-y-1 hover:text-gray-500
-          `}
-        >
-          <span className="text-2xl">iOS Engineer</span>
-        </button>
-        <button
           onClick={() => handleButtonClick("React")}
           className={`font-semibold font-Oswald rounded-sm ${
             selectedButton === "React" ? "text-onyx-300" : "text-gray-300"
           }
-          pl-4 md:pl-3 sm:text-xs md:text-sm lg:text-base xl:text-base transition-transform duration-100 transform hover:-translate-y-1 hover:text-gray-500
+          sm:text-xs md:text-sm lg:text-base xl:text-base transition-transform duration-100 transform hover:-translate-y-1 hover:text-gray-500
           `}
         >
           <span className="text-2xl">Front-end React Developer</span>
+        </button>
+        <button
+          onClick={() => handleButtonClick("iOS")}
+          className={`font-semibold font-Oswald rounded-sm ${
+            selectedButton === "iOS" ? "text-onyx-300" : "text-gray-300"
+          } ${selectedButton === "iOS" ? "iOS" : ""}
+          pl-4 md:pl-3 sm:text-xs md:text-sm lg:text-base xl:text-base transition-transform duration-100 transform hover:-translate-y-1 hover:text-gray-500
+          `}
+        >
+          <span className="text-2xl">iOS Engineer</span>
         </button>
       </div>
       <div>

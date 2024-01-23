@@ -27,14 +27,6 @@ const iOSData = [
 
 const ReactData = [
   {
-    title: "React Blogs",
-    imgUrl: "/assets/Blogs.png",
-    stack: ["React", "Tail", "CMS"],
-    link: "https://minimal-blog-lime.vercel.app/",
-    detail:
-      "A Blog site that is all content related to front-end development. Using CMS Sanity, I am able to control the content and data to display.",
-  },
-  {
     title: "Boba e-commerce",
     imgUrl: "/assets/BobaShop.png",
     stack: ["React", "Stripe", "CMS", "Tail", "Shad", "Next"],
@@ -42,6 +34,15 @@ const ReactData = [
     detail:
       "An online boba shop connected to CMS Sanity and Stripe for checkout. Theme of the site and some UI elements come from Shadcn",
   },
+  {
+    title: "React Blogs",
+    imgUrl: "/assets/Blogs.png",
+    stack: ["React", "Tail", "CMS"],
+    link: "https://minimal-blog-lime.vercel.app/",
+    detail:
+      "A Blog site that is all content related to front-end development. Using CMS Sanity, I am able to control the content and data to display.",
+  },
+
   {
     title: "Porfolio Website",
     imgUrl: "/assets/Portfolio.png",
