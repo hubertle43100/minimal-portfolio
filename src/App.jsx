@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import FooterItem from "./components/FooterItem";
 import footer from "./components/data/footer";
 import logoImage from "./public/Hubert.png";
+import { annotate, annotationGroup } from "rough-notation";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -24,6 +25,28 @@ function App() {
   };
 
   useEffect(() => {
+    const h1 = document.getElementById("h1");
+    const h2 = document.getElementById("h2");
+
+    const highlight1 = annotate(h1, {
+      type: "highlight",
+      color: "#FEF08A",
+      animate: true,
+    });
+
+    const highlight2 = annotate(h2, {
+      type: "highlight",
+      color: "#FEF08A",
+      animate: true,
+    });
+
+    const group = annotationGroup([highlight1, highlight2]);
+
+    highlight1.show();
+    setTimeout(() => {
+      highlight2.show();
+    }, 1000);
+
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
@@ -86,7 +109,7 @@ function App() {
             {/* Left column for Intro */}
             <div className="pt-20">
               <h3 className="pl-1 font-bold font-SourceCodePro md:mt-10">
-                Hi, <span className="bg-yellow-200">my name</span> is
+                Hi, <span id="h1">my name</span> is
               </h3>
               <div className="flex items-center">
                 <h1 className="text-5xl md:text-6xl mb-1 md:mb-3 font-bold font-Oswald pr-5">
@@ -103,11 +126,10 @@ function App() {
                 and web.
               </h1>
               <p className=" font-bold font-SourceCodePro">
-                I'm a front-end developer with{" "}
-                <span className="bg-yellow-200">two years</span> of specialized
-                experience in iOS. To broaden my career opportunities, I've
-                transitioned into React and have plans to extend into React
-                Native in the near future.
+                I'm a front-end developer with <span id="h2">two years</span> of
+                specialized experience in iOS. To broaden my career
+                opportunities, I've transitioned into React and have plans to
+                extend into React Native in the near future.
               </p>
               <div>
                 <a
