@@ -1,4 +1,4 @@
-<a href="https://minimal-blog-lime.vercel.app/">
+<a href="https://hubertle.online/">
   <p align="center">
     <img src="https://github.com/hubertle43100/minimal-portfolio/assets/56861838/4669d19e-1a78-4c94-b108-3f90849a9e8b" width="200" height="200" alt="Hobbies">
   </p>
@@ -15,11 +15,10 @@
 
 `Tech stacks`
 
-[![c1](https://img.shields.io/badge/Tailwind_CSS-white?style=for-the-badge&logo=tailwind-css&logoColor=000000)](https://minimal-blog-lime.vercel.app/)
-[![c2](https://img.shields.io/badge/JavaScript-white?style=for-the-badge&logo=javascript&logoColor=000000)](https://minimal-blog-lime.vercel.app/)
-[![c3](https://img.shields.io/badge/React-white?style=for-the-badge&logo=react&logoColor=000000)](https://minimal-blog-lime.vercel.app/)
-[![c4](https://img.shields.io/badge/Vite-white?style=for-the-badge&logo=vite&logoColor=000000)](https://minimal-blog-lime.vercel.app/)
-
+[![c1](https://img.shields.io/badge/Tailwind_CSS-white?style=for-the-badge&logo=tailwind-css&logoColor=000000)](https://hubertle.online/)
+[![c2](https://img.shields.io/badge/JavaScript-white?style=for-the-badge&logo=javascript&logoColor=000000)](https://hubertle.online/)
+[![c3](https://img.shields.io/badge/React-white?style=for-the-badge&logo=react&logoColor=000000)](https://hubertle.online/)
+[![c4](https://img.shields.io/badge/Vite-white?style=for-the-badge&logo=vite&logoColor=000000)](https://hubertle.online/)
 
 <br/>
 
