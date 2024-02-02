@@ -57,7 +57,7 @@
     <img src="https://github.com/hubertle43100/minimal-portfolio/assets/56861838/d14b2eeb-4d8c-45ee-82ae-1d6d0433b33d" alt="Hobbies">
   </p>
 
-> This for full screen you will two columns (one scrollable) while in half-screen it is going to be cohesively one.
+> This is for the full screen you will have two columns (one scrollable) while in half-screen it is going to be cohesively one.
 
 <br/>
 <br/>
@@ -65,7 +65,7 @@
 
 `Found something wrong with the website?`
 
-[![Check](https://img.shields.io/badge/Issues-FFDE59?style=for-the-badge&logo=Linode&logoColor=black)](https://github.com/hubertle43100/minimal-portfolio/issues)
+[![Check](https://img.shields.io/badge/Issues-94B1AF?style=for-the-badge&logo=Linode&logoColor=black)](https://github.com/hubertle43100/minimal-portfolio/issues)
 
 <br/>
 
