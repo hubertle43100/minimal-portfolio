@@ -97,8 +97,8 @@ function App() {
   return (
     <>
       <div className="bg-white dark:bg-gray-800 text-stone-900 dark:text-white min-h-screen font-inter">
-        <div className="max-w-5xl w-11/12 mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8">
-          <div className="xl:sticky xl:top-0 xl:h-screen pt-10 ">
+        <div className="max-w-5xl w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="md:sticky md:top-0 md:h-screen pt-10 ">
             <button
               type="button"
               onClick={handleThemeSwitch}
