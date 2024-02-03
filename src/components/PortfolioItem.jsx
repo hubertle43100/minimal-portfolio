@@ -48,7 +48,7 @@ function PortfolioItem({ title, imgUrl, stack, link, detail }) {
   };
 
   return (
-    <div className="rounded-md overflow-hidden bg-gray-50 hover:bg-slate-100">
+    <div className="rounded-md overflow-hidden  bg-gray-50 hover:bg-slate-100">
       <img
         src={imgUrl}
         alt="portfolio"
@@ -64,7 +64,7 @@ function PortfolioItem({ title, imgUrl, stack, link, detail }) {
         <div className="w-full p-4 text-black">
           <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm pb-3 ">
             {stack.map((item) => (
-              <span className="group inline-block px-2 py-1 font-semibold border-1 rounded-full bg-slate-200 h-12 w-12 text-xs flex items-center justify-center">
+              <span className="group px-2 py-1 font-semibold border-1 rounded-full bg-slate-200 h-12 w-12 text-xs flex items-center justify-center">
                 {item}
                 <span className="opacity-0 group-hover:opacity-100 absolute bg-black text-white p-2 rounded-md mt-[-6rem]">
                   {abbreviations.includes(item) ? getFullForm(item) : item}
