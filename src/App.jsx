@@ -53,7 +53,7 @@ function App() {
       document.documentElement.classList.remove("dark");
     }
   }, [theme]);
-
+  // Turn this into separate files
   const sun = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
