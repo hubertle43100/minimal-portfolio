@@ -42,15 +42,6 @@ const ReactData = [
     detail:
       "A Blog site that is all content related to front-end development. Using CMS Sanity, I am able to control the content and data to display.",
   },
-
-  {
-    title: "Porfolio Website",
-    imgUrl: "/assets/Portfolio.png",
-    stack: ["React", "Tail", "Vite"],
-    link: "https://hubertle.online/",
-    detail:
-      "Portfolio showcasing all projects and provide an extent of my resume ",
-  },
 ];
 
 export { ReactData, iOSData };
