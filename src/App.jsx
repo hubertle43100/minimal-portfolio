@@ -8,6 +8,7 @@ import FooterItem from "./components/FooterItem";
 import footer from "./components/data/footer";
 import logoImage from "./public/Hubert.png";
 import { annotate, annotationGroup } from "rough-notation";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -24,35 +25,6 @@ function App() {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
-  useEffect(() => {
-    const h1 = document.getElementById("h1");
-    const h2 = document.getElementById("h2");
-
-    const highlight1 = annotate(h1, {
-      type: "highlight",
-      color: "#FEF08A",
-      animate: true,
-    });
-
-    const highlight2 = annotate(h2, {
-      type: "highlight",
-      color: "#FEF08A",
-      animate: true,
-    });
-
-    const group = annotationGroup([highlight1, highlight2]);
-
-    highlight1.show();
-    setTimeout(() => {
-      highlight2.show();
-    }, 1000);
-
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
   // Turn this into separate files
   const sun = (
     <svg
@@ -96,67 +68,16 @@ function App() {
 
   return (
     <>
-      <div className="bg-white dark:bg-gray-800 text-stone-900 dark:text-white min-h-screen font-inter">
-        <div className="max-w-5xl w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="md:sticky md:top-0 md:h-screen pt-10 ">
-            <button
-              type="button"
-              onClick={handleThemeSwitch}
-              className="p-2 z-10 left-10 top-4 bg-onyx-300 dark:bg-white text-lg rounded-md dark:text-black"
-            >
-              {theme === "dark" ? sun : moon}
-            </button>
-            {/* Left column for Intro */}
-            <div className="pt-20">
-              <h3 className="pl-1 font-bold font-SourceCodePro md:mt-10">
-                Hi, <span id="h1">my name</span> is
-              </h3>
-              <div className="flex items-center">
-                <h1 className="text-5xl md:text-6xl mb-1 md:mb-3 font-bold font-Oswald pr-5">
-                  Hubert Le
-                </h1>
-                <img
-                  src={logoImage}
-                  alt="Logo"
-                  className="w-14 md:w-20  h-auto"
-                />
-              </div>
-              <h1 className="text-2xl md:text-3xl mb-1 md:mb-3 font-bold font-Oswald text-onyx-300">
-                I love to use my creative vision for coding front end for mobile
-                and web.
-              </h1>
-              <p className=" font-bold font-SourceCodePro">
-                I'm a front-end developer with <span id="h2">two years</span> of
-                specialized experience in iOS. To broaden my career
-                opportunities, I've transitioned into React and have plans to
-                extend into React Native in the near future.
-              </p>
-              <div>
-                <a
-                  href="https://docs.google.com/document/d/11a477w9AtugxLExYpAYGRLVQL_YFCYu8MKw7g4nAkFE/edit?usp=sharing"
-                  download="HubertLe_Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-slate-300 text-white px-4 py-2 rounded-md inline-block mt-2 transition duration-300 hover:shadow-md hover:bg-sage-300"
-                >
-                  View Resume
-                </a>
-              </div>
-              <div className="container max-w-screen-lg mx-auto mt-4">
-                <div>
-                  <div className="flex flex-wrap justify-start gap-2">
-                    {footer.map((footer) => (
-                      <FooterItem
-                        href={footer.href}
-                        bgColor={footer.bgColor}
-                        viewBox={footer.viewBox}
-                        path={footer.path}
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div className="bg-white text-stone-900 min-h-screen font-inter">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-8">
+          <div className="md:top-0 md:h-screen pt-10 ">
+            <Navbar />
+            <h1 className="text-8xl md:text-9xl font-bold font-Oswald">
+              HUBERT LE
+            </h1>
+            <h1 className="text-8xl md:text-9xl font-bold font-Oswald">
+              FRONTEND <br className="md:hidden" /> DEVELOPER
+            </h1>
           </div>
           <div>
             {/* Right column for Timeline, Contact, and Footer */}
