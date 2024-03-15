@@ -9,6 +9,7 @@ import footer from "./components/data/footer";
 import logoImage from "./public/Hubert.png";
 import { annotate, annotationGroup } from "rough-notation";
 import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -72,12 +73,8 @@ function App() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-8">
           <div className="md:top-0 md:h-screen pt-10 ">
             <Navbar />
-            <h1 className="text-8xl md:text-9xl font-bold font-Oswald">
-              HUBERT LE
-            </h1>
-            <h1 className="text-8xl md:text-9xl font-bold font-Oswald">
-              FRONTEND <br className="md:hidden" /> DEVELOPER
-            </h1>
+
+            <Header />
           </div>
           <div>
             {/* Right column for Timeline, Contact, and Footer */}

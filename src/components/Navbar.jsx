@@ -12,7 +12,7 @@ const Navbar = () => {
             BUILDING PROJECTS SINCE 2021
           </h1>
           <h1 className="text-lg font-bold font-Oswald ml-2">THE KITCHEN</h1>
-          <h1 className="text-lg font-bold font-Oswald ml-2">VIDEOS</h1>
+          <h1 className="text-lg font-bold font-Oswald ml-2 mr-2">YOUTUBE</h1>
         </div>
       </div>
     </nav>
